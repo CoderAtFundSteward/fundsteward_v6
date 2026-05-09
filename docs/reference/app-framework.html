@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FundSteward | Financial Intelligence for Mission-Driven Organizations</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0A192F", // Navy
+            "secondary": "#B3934F", // Gold Accent
+            "accent": "#C9A961",
+            "background": "#F8F9FA", // Light Neutral Surface
+            "surface": "#FFFFFF",
+            "on-surface": "#111111",
+            "on-surface-variant": "#4A5568",
+            "outline": "#E2E8F0",
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+            "h1": ["Manrope", "sans-serif"],
+            "h2": ["Manrope", "sans-serif"],
+            "h3": ["Manrope", "sans-serif"],
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body { font-family: 'Manrope', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .editorial-shadow {
+      box-shadow: 0 20px 40px -10px rgba(10, 25, 47, 0.1);
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #C9A961 0%, #B3934F 100%);
+    }
+    .letter-spacing-tight { letter-spacing: -0.02em; }
+    .letter-spacing-wide { letter-spacing: 0.05em; }
+  </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- NAVIGATION BAR -->
+<nav class="sticky top-0 z-50 bg-primary/95 backdrop-blur-md border-b border-white/5 px-6 py-5">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-secondary">
+<svg fill="none" height="28" viewbox="0 0 48 48" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="font-bold text-xl text-white tracking-tight">FundSteward</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-white/70 hover:text-white font-semibold text-xs uppercase tracking-widest transition-colors" href="#">Product</a>
+<a class="text-white/70 hover:text-white font-semibold text-xs uppercase tracking-widest transition-colors" href="#">Integrations</a>
+<a class="text-white/70 hover:text-white font-semibold text-xs uppercase tracking-widest transition-colors" href="#">Pricing</a>
+<a class="text-white/70 hover:text-white font-semibold text-xs uppercase tracking-widest transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-secondary hover:bg-accent text-primary px-7 py-2.5 rounded-full font-bold uppercase tracking-widest text-[10px] transition-all">
+      Request Demo
+    </button>
+</div>
+</nav>
+<!-- HERO SECTION -->
+<section class="relative pt-28 pb-36 px-6 overflow-hidden">
+<div class="max-w-4xl mx-auto text-center">
+<div class="space-y-8 flex flex-col items-center">
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary/10 text-secondary font-bold text-[10px] uppercase tracking-widest border border-secondary/20">
+        Now in Private Beta
+      </div>
+<h1 class="text-5xl lg:text-7xl font-extrabold text-primary leading-[1.1] letter-spacing-tight">
+        Fund-level financial intelligence for mission-driven organizations.
+      </h1>
+<p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        Automated financial oversight by connecting your organization's mission to QuickBooks, Tithe.ly, and Planning Center.
+      </p>
+<div class="flex flex-wrap justify-center gap-4 pt-4">
+<button class="gold-gradient text-primary px-10 py-5 rounded-lg font-extrabold text-sm uppercase tracking-widest editorial-shadow hover:scale-[1.02] transition-all">
+          Request a Demo
+        </button>
+<button class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-5 rounded-lg font-extrabold text-sm uppercase tracking-widest transition-all">
+          Learn More
+        </button>
+</div>
+<div class="flex flex-wrap justify-center gap-x-10 gap-y-4 pt-8">
+<div class="flex items-center gap-2.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-bold tracking-tight">Automated reconciliation</span>
+</div>
+<div class="flex items-center gap-2.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-bold tracking-tight">Real-time reporting</span>
+</div>
+<div class="flex items-center gap-2.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-bold tracking-tight">Mission-aligned insights</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROBLEM SECTION -->
+<section class="bg-primary py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-4xl font-extrabold text-white mb-6 letter-spacing-tight">The $24,000 annual report.</h2>
+<p class="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
+        Manual reconciliation and fund accounting shouldn't cost you an entire staff salary. Reclaim your time for the mission.
+      </p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white/5 p-10 rounded-2xl border border-white/10 hover:border-secondary/30 transition-colors group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 block" data-icon="schedule">schedule</span>
+<h3 class="text-white text-2xl font-bold mb-3">40+ hours per month</h3>
+<p class="text-white/50 text-sm leading-relaxed">The average time spent by non-profit admins manually syncing giving data with accounting software.</p>
+</div>
+<div class="bg-white/5 p-10 rounded-2xl border border-white/10 hover:border-secondary/30 transition-colors group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 block" data-icon="warning">warning</span>
+<h3 class="text-white text-2xl font-bold mb-3">$2,000 Monthly cost</h3>
+<p class="text-white/50 text-sm leading-relaxed">Labor costs hidden in spreadsheets, manual entry, and year-end audit preparation delays.</p>
+</div>
+<div class="bg-white/5 p-10 rounded-2xl border border-white/10 hover:border-secondary/30 transition-colors group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 block" data-icon="verified">verified</span>
+<h3 class="text-white text-2xl font-bold mb-3">$18,000/yr Saved</h3>
+<p class="text-white/50 text-sm leading-relaxed">Automated fund accounting reduces overhead and provides board-ready reports in seconds.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS SECTION -->
+<section class="py-32 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-extrabold text-primary text-center mb-24 letter-spacing-tight">Connect. Sync. Insight.</h2>
+<div class="grid md:grid-cols-3 gap-16 relative">
+<div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-[2px] bg-outline z-0"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full gold-gradient flex items-center justify-center text-primary text-3xl font-extrabold border-8 border-white mb-8 editorial-shadow">1</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-primary">Connect Platforms</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed px-4">Securely link your QuickBooks Online and giving platforms like Tithe.ly in minutes.</p>
+</div>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full gold-gradient flex items-center justify-center text-primary text-3xl font-extrabold border-8 border-white mb-8 editorial-shadow">2</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-primary">Automated Sync</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed px-4">FundSteward maps every donation to the correct chart of accounts and fund class automatically.</p>
+</div>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full gold-gradient flex items-center justify-center text-primary text-3xl font-extrabold border-8 border-white mb-8 editorial-shadow">3</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-primary">Instant Reporting</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed px-4">Generate statement of activities and restricted fund reports with one click for board meetings.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTEGRATIONS SECTION -->
+<section class="py-32 px-6 bg-background">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-4xl font-extrabold text-primary mb-20 letter-spacing-tight">Built on the tools you already use.</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="bg-white p-10 rounded-xl border border-outline editorial-shadow flex flex-col items-center gap-5 transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-background flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance">account_balance</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-bold text-sm text-primary uppercase tracking-wider">QuickBooks</h4>
+<p class="text-[11px] text-on-surface-variant">The source of truth for your ledger.</p>
+</div>
+</div>
+<div class="bg-white p-10 rounded-xl border border-outline editorial-shadow flex flex-col items-center gap-5 transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-background flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-bold text-sm text-primary uppercase tracking-wider">Tithe.ly</h4>
+<p class="text-[11px] text-on-surface-variant">Direct integration for church giving.</p>
+</div>
+</div>
+<div class="bg-white p-10 rounded-xl border border-outline editorial-shadow flex flex-col items-center gap-5 transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-background flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="event_note">event_note</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-bold text-sm text-primary uppercase tracking-wider">Planning Center</h4>
+<p class="text-[11px] text-on-surface-variant">Seamless member data syncing.</p>
+</div>
+</div>
+<div class="bg-white p-10 rounded-xl border border-outline editorial-shadow flex flex-col items-center gap-5 transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-background flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="payments">payments</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-bold text-sm text-primary uppercase tracking-wider">Pushpay</h4>
+<p class="text-[11px] text-on-surface-variant">Enterprise donation management.</p>
+</div>
+</div>
+<div class="bg-white p-10 rounded-xl border border-outline editorial-shadow flex flex-col items-center gap-5 transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-background flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="security">security</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-bold text-sm text-primary uppercase tracking-wider">Plaid</h4>
+<p class="text-[11px] text-on-surface-variant">Bank-level secure connectivity.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING SECTION -->
+<section class="py-32 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-4xl font-extrabold text-primary mb-6 letter-spacing-tight">Pricing that replaces your CPA invoice.</h2>
+<p class="text-on-surface-variant text-lg">Transparent pricing for every stage of institutional growth.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-10 items-center">
+<!-- Intelligence -->
+<div class="bg-white p-12 rounded-2xl border border-outline editorial-shadow flex flex-col">
+<div class="mb-10">
+<h4 class="font-bold text-xs text-secondary uppercase tracking-[0.2em] mb-4">Intelligence</h4>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-extrabold text-primary tracking-tighter">$99</span>
+<span class="text-on-surface-variant text-sm font-semibold">/month</span>
+</div>
+</div>
+<ul class="space-y-5 mb-12 flex-grow">
+<li class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Up to 2 Integrations
+          </li>
+<li class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Daily Auto-Sync
+          </li>
+<li class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Email Support
+          </li>
+</ul>
+<button class="w-full border-2 border-primary text-primary py-4 rounded-lg font-extrabold text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all">Get Started</button>
+</div>
+<!-- Platform -->
+<div class="bg-white p-12 rounded-2xl border-2 border-secondary editorial-shadow flex flex-col relative scale-105 z-10">
+<div class="absolute -top-5 left-1/2 -translate-x-1/2 gold-gradient text-primary px-6 py-2 rounded-full text-[10px] font-extrabold uppercase tracking-widest">Most Popular</div>
+<div class="mb-10">
+<h4 class="font-bold text-xs text-secondary uppercase tracking-[0.2em] mb-4">Platform</h4>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-extrabold text-primary tracking-tighter">$199</span>
+<span class="text-on-surface-variant text-sm font-semibold">/month</span>
+</div>
+</div>
+<ul class="space-y-5 mb-12 flex-grow">
+<li class="flex items-center gap-4 text-sm font-bold text-primary">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Unlimited Integrations
+          </li>
+<li class="flex items-center gap-4 text-sm font-bold text-primary">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Real-time Sync
+          </li>
+<li class="flex items-center gap-4 text-sm font-bold text-primary">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Priority Board Reports
+          </li>
+<li class="flex items-center gap-4 text-sm font-bold text-primary">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Concierge Onboarding
+          </li>
+</ul>
+<button class="w-full gold-gradient text-primary py-5 rounded-lg font-extrabold text-xs uppercase tracking-widest editorial-shadow transition-all hover:scale-[1.02]">Get Started</button>
+</div>
+<!-- Enterprise -->
+<div class="bg-white p-12 rounded-2xl border border-outline editorial-shadow flex flex-col">
+<div class="mb-10">
+<h4 class="font-bold text-xs text-secondary uppercase tracking-[0.2em] mb-4">Enterprise</h4>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-extrabold text-primary tracking-tighter">Custom</span>
+</div>
+</div>
+<ul class="space-y-5 mb-12 flex-grow">
+<li class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Multi-entity Management
+          </li>
+<li class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Custom API Access
+          </li>
+<li class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check">check</span>
+            Dedicated Success Manager
+          </li>
+</ul>
+<button class="w-full border-2 border-primary text-primary py-4 rounded-lg font-extrabold text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all">Contact Sales</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="bg-primary py-32 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl font-extrabold text-white mb-6 letter-spacing-tight">Request early access.</h2>
+<p class="text-lg text-white/60 mb-16 max-w-2xl mx-auto">
+      We are currently in a private beta with selected mission-driven partners. Apply now to be first in line for our next rollout.
+    </p>
+<div class="bg-white/5 p-12 rounded-2xl border border-white/10 text-left editorial-shadow">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+<div class="space-y-3">
+<label class="text-white/40 text-[10px] uppercase tracking-widest font-extrabold">Full Name</label>
+<input class="w-full bg-white/5 border-white/10 rounded-lg text-white py-4 px-5 focus:border-secondary focus:ring-0 placeholder:text-white/20 transition-all" placeholder="Jane Doe" type="text"/>
+</div>
+<div class="space-y-3">
+<label class="text-white/40 text-[10px] uppercase tracking-widest font-extrabold">Organization</label>
+<input class="w-full bg-white/5 border-white/10 rounded-lg text-white py-4 px-5 focus:border-secondary focus:ring-0 placeholder:text-white/20 transition-all" placeholder="Grace Community" type="text"/>
+</div>
+</div>
+<div class="space-y-3 mb-10">
+<label class="text-white/40 text-[10px] uppercase tracking-widest font-extrabold">Work Email</label>
+<input class="w-full bg-white/5 border-white/10 rounded-lg text-white py-4 px-5 focus:border-secondary focus:ring-0 placeholder:text-white/20 transition-all" placeholder="jane@organization.org" type="email"/>
+</div>
+<button class="w-full gold-gradient text-primary py-5 rounded-lg font-extrabold text-sm uppercase tracking-widest transition-all hover:scale-[1.01] editorial-shadow">
+        Send Us an Email
+      </button>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-primary border-t border-white/5 py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+<div class="space-y-8">
+<div class="flex items-center gap-3">
+<div class="text-secondary">
+<svg fill="none" height="24" viewbox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="font-bold text-xl text-white tracking-tight">FundSteward</span>
+</div>
+<p class="text-white/40 text-sm leading-relaxed max-w-xs">
+          Headquartered in Nashville, TN.<br/>
+          Empowering stewards of capital since 2024.
+        </p>
+</div>
+<div>
+<h5 class="text-white font-extrabold text-[10px] mb-8 uppercase tracking-[0.2em]">Platform</h5>
+<ul class="space-y-5 text-white/50 text-sm font-medium">
+<li><a class="hover:text-secondary transition-colors" href="#">Product Overview</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Integrations</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Security</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-extrabold text-[10px] mb-8 uppercase tracking-[0.2em]">Company</h5>
+<ul class="space-y-5 text-white/50 text-sm font-medium">
+<li><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-extrabold text-[10px] mb-8 uppercase tracking-[0.2em]">Connect</h5>
+<div class="flex gap-5">
+<a class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:border-secondary hover:text-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:border-secondary hover:text-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+<p class="text-white/30 text-[11px] font-medium tracking-wide">© 2024 FundSteward Inc. All rights reserved.</p>
+<p class="text-white/20 text-[10px] max-w-lg text-center md:text-right italic font-medium leading-relaxed">
+        QuickBooks is a registered trademark of Intuit Inc. Tithe.ly is a trademark of Tithe.ly. FundSteward is an independent software provider.
+      </p>
+</div>
+</div>
+</footer>
+</body></html>
