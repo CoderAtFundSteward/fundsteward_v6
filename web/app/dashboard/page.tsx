@@ -73,11 +73,7 @@ export default async function DashboardPage() {
           {memberships && memberships.length > 0 ? (
             <ul className="space-y-3">
               {memberships.map((row) => {
-                const org = row.organizations as {
-                  id: string;
-                  name: string;
-                  slug: string | null;
-                } | null;
+                const org = organizationFromRow(row.organizations);
                 if (!org) return null;
                 return (
                   <li
@@ -107,4 +103,26 @@ export default async function DashboardPage() {
       </main>
     </div>
   );
+}
+
+type OrgRow = {
+  id: string;
+  name: string;
+  slug: string | null;
+};
+
+function organizationFromRow(organizations: unknown): OrgRow | null {
+  if (organizations == null) return null;
+  if (Array.isArray(organizations)) {
+    const first = organizations[0];
+    return isOrgRow(first) ? first : null;
+  }
+  return isOrgRow(organizations) ? organizations : null;
+}
+
+function isOrgRow(value: unknown): value is OrgRow {
+  if (value == null || typeof value !== "object") return false;
+  if (!("id" in value && "name" in value)) return false;
+  const v = value as { id: unknown; name: unknown; slug?: unknown };
+  return typeof v.id === "string" && typeof v.name === "string";
 }

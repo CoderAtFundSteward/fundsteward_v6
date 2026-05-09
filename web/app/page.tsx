@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
 import { FundStewardLogo } from "@/components/fundsteward-logo";
+import { MarketingAuthLink } from "@/components/marketing-auth-link";
 
 export default function Home() {
   return (
@@ -43,12 +43,7 @@ export default function Home() {
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Link
-              href="/login"
-              className="hidden text-[10px] font-bold uppercase tracking-widest text-white/80 transition-colors hover:text-white sm:inline"
-            >
-              Sign in
-            </Link>
+            <MarketingAuthLink />
             <button
               type="button"
               className="rounded-full bg-secondary px-7 py-2.5 text-[10px] font-bold uppercase tracking-widest text-primary transition-all hover:bg-accent"
